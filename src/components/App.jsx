@@ -79,7 +79,7 @@ function App() {
         path="/ducks"
         element={
           <ProtectedRoute isLoggedIn={isLoggedIn}>
-            <Ducks />
+            <Ducks setIsLoggedIn={setIsLoggedIn} />
           </ProtectedRoute>
         }
       />
